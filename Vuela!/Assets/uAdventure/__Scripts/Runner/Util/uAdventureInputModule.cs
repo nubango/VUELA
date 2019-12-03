@@ -60,6 +60,20 @@ namespace uAdventure.Runner
             return false;
         }
 
+        protected override void Start()
+        {
+            base.Start();
+
+            if(FindObjectsOfType<uAdventureInputModule>().Length > 1)
+            {
+                DestroyImmediate(this.gameObject);
+            }
+            else
+            {
+                DontDestroyOnLoad(this.gameObject);
+            }
+        }
+
         public override void Process()
         {
             if (!eventSystem.isFocused && ShouldIgnoreEventsOnNoFocus())

@@ -14,13 +14,19 @@ namespace uAdventure.Runner
         public bool Disabled { get; set; }
         public GameObject Override { get; set; }
         public GameObject Base { get; set; }
-        public static uAdventureRaycaster Instance { get; private set; }
+
+        public static uAdventureRaycaster Instance 
+        { 
+            get
+            {
+                return FindObjectOfType<uAdventureRaycaster>();
+            }
+        }
 
         protected override void Awake()
         {
             base.Awake();
             Disabled = false;
-            Instance = this;
         }
 
         public override void Raycast(PointerEventData eventData, List<RaycastResult> resultAppendList)
@@ -109,13 +115,14 @@ namespace uAdventure.Runner
                 for (int b = 0, bmax = hitCount2D; b < bmax; ++b)
                 {
                     var sr = m_Hits2D[b].collider.gameObject.GetComponent<SpriteRenderer>();
+                    var hitPosition = new Vector3(m_Hits2D[b].point.x, m_Hits2D[b].point.y, m_Hits2D[b].collider.gameObject.transform.position.z);
 
                     var result = new RaycastResult
                     {
                         gameObject = m_Hits2D[b].collider.gameObject,
                         module = this,
-                        distance = Vector3.Distance(eventCamera.transform.position, m_Hits2D[b].point),
-                        worldPosition = m_Hits2D[b].point,
+                        distance = Vector3.Distance(eventCamera.transform.position, hitPosition),
+                        worldPosition = hitPosition,
                         worldNormal = m_Hits2D[b].normal,
                         screenPosition = eventData.position,
                         index = resultAppendList.Count,
