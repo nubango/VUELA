@@ -8,3 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/uAdventure/Scenes/TestScene_0.unity
     guid: 50cb4d738864e444ebfba1001fae4911
+  - enabled: 1
+    path: Assets/Scenes/SuitcasePuzzle.unity
+    guid: 2553b93855715164589dc979934e28b4

@@ -404,133 +404,6 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </character>
-  <scene id="SceneId" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero1" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/provisional fondo.jpg" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero2" hideInventory="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="aeropuerto">
-      <asset type="background" uri="assets/background/provisional fondo.jpg" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <objects>
-      <object-ref idTarget="dni2" x="1066" y="937" scale="0.2388191" layer="0" hasInfluenceArea="no" />
-    </objects>
-  </scene>
-  <scene id="pasajero3" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero4" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero5" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero6" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero7" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero8" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero9" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="pasajero10" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-  </scene>
-  <scene id="test" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
-    <documentation>
-    </documentation>
-    <resources name="No name">
-      <asset type="background" uri="assets/background/fondoTest.png" />
-    </resources>
-    <name>
-    </name>
-    <default-initial-position x="400" y="450" />
-    <characters>
-      <character-ref idTarget="ninyaTest" x="751" y="699" scale="1" orientation="2" layer="1" hasInfluenceArea="no" />
-      <character-ref idTarget="madreTest" x="1102" y="764" scale="0.4018796" orientation="2" layer="0" hasInfluenceArea="no" />
-    </characters>
-  </scene>
   <object id="dni1" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/special/EmptyImage.png" />
@@ -841,7 +714,7 @@
       <condition />
       <child nodeindex="3" />
     </dialogue-node>
-    <option-node nodeindex="3" keepShowing="yes" editor-x="47" editor-y="271" x="47" y="271">
+    <option-node nodeindex="3" keepShowing="yes" preListening="yes" editor-x="47" editor-y="271" x="47" y="271">
       <speak-player>
         <text>¡Claro!</text>
         <resources name="No name" />
@@ -902,4 +775,5 @@
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
+  <unity-scene id="SuitcaseScene" scene="Assets/Scenes/SuitcasePuzzle.unity" />
 </eAdventure>
