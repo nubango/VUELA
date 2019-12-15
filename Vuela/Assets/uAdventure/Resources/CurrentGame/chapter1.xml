@@ -32,15 +32,187 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </player>
-  <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="yes" />
-  <scene id="PapersPlease" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="no" />
+  <scene id="PapersPleaseFermin" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/special/EmptyBackground.png" />
+      <asset type="background" uri="assets/background/Background.png" />
     </resources>
     <name>
     </name>
     <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="Fermin" x="333" y="821" scale="1.632562" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="billeteFermin" x="1331" y="1017" scale="1.182206" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="docFermin" x="1045" y="624" scale="0.4055489" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="maletafermin" x="1621" y="506" scale="0.5739564" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="okfermmin" x="130" y="1048" scale="0.09563289" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="noFermmin" x="550" y="1050" scale="0.3" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="info" x="325" y="1075" scale="0.1837933" layer="2" hasInfluenceArea="no" />
+      <object-ref idTarget="infoGrande" x="948" y="1015" scale="1.339541" layer="7" hasInfluenceArea="no" />
+    </objects>
   </scene>
+  <object id="Fermin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/Fermín .png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="noFermmin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/no.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="okfermmin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/ok.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="Correcto" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
+  </object>
+  <object id="billeteFermin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/biillete Fermin.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="docFermin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/d Fermin.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="maletafermin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/maletaVacia.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </object>
+  <object id="info" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/requisitos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="infoGrande" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="infoGrande" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <condition>
+        <active flag="infoGrande" />
+      </condition>
+      <asset type="image" uri="assets/image/requisitos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="infoGrande" />
+        </condition>
+        <effect>
+          <deactivate flag="infoGrande" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <graph-conversation id="Correcto">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Todo correcto, puede continuar.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
+  <graph-conversation id="Tijeras">
+    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+      <speak-player>
+        <resources name="No name" />
+        <text>Lo lamento, pero no puede entrar en el avión con unas tijeras de ese tamaño.</text>
+      </speak-player>
+      <condition />
+      <end-conversation />
+    </dialogue-node>
+  </graph-conversation>
 </eAdventure>
