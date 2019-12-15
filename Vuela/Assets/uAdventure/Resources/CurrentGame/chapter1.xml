@@ -32,6 +32,37 @@
     </description>
     <voice name="" synthesizeAlways="no" />
   </player>
+  <character id="invisible">
+    <resources name="No name">
+      <asset type="standup" uri="assets/special/EmptyAnimation" />
+      <asset type="standdown" uri="assets/special/EmptyAnimation" />
+      <asset type="standright" uri="assets/special/EmptyAnimation" />
+      <asset type="standleft" uri="assets/special/EmptyAnimation" />
+      <asset type="speakup" uri="assets/special/EmptyAnimation" />
+      <asset type="speakdown" uri="assets/special/EmptyAnimation" />
+      <asset type="speakright" uri="assets/special/EmptyAnimation" />
+      <asset type="speakleft" uri="assets/special/EmptyAnimation" />
+      <asset type="useright" uri="assets/special/EmptyAnimation" />
+      <asset type="useleft" uri="assets/special/EmptyAnimation" />
+      <asset type="walkup" uri="assets/special/EmptyAnimation" />
+      <asset type="walkdown" uri="assets/special/EmptyAnimation" />
+      <asset type="walkright" uri="assets/special/EmptyAnimation" />
+      <asset type="walkleft" uri="assets/special/EmptyAnimation" />
+    </resources>
+    <textcolor showsSpeechBubble="no" bubbleBkgColor="#FFFFFF" bubbleBorderColor="#000000">
+      <frontcolor color="#FFFFFF" />
+      <bordercolor color="#000000" />
+    </textcolor>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <voice name="" synthesizeAlways="no" />
+  </character>
   <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="no" />
   <scene id="PapersPleaseFermin" hideInventory="no" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
@@ -43,16 +74,212 @@
     </name>
     <default-initial-position x="400" y="450" />
     <objects>
-      <object-ref idTarget="Fermin" x="333" y="821" scale="1.632562" layer="6" hasInfluenceArea="no" />
-      <object-ref idTarget="billeteFermin" x="1331" y="1017" scale="1.182206" layer="5" hasInfluenceArea="no" />
-      <object-ref idTarget="docFermin" x="1045" y="624" scale="0.4055489" layer="0" hasInfluenceArea="no" />
-      <object-ref idTarget="maletafermin" x="1621" y="506" scale="0.5739564" layer="1" hasInfluenceArea="no" />
-      <object-ref idTarget="okfermmin" x="130" y="1048" scale="0.09563289" layer="4" hasInfluenceArea="no" />
-      <object-ref idTarget="noFermmin" x="550" y="1050" scale="0.3" layer="3" hasInfluenceArea="no" />
-      <object-ref idTarget="info" x="325" y="1075" scale="0.1837933" layer="2" hasInfluenceArea="no" />
-      <object-ref idTarget="infoGrande" x="948" y="1015" scale="1.339541" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="Fermin" x="316" y="822" scale="1.632562" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="billeteFermin" x="1331" y="1017" scale="1.182206" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="docFermin" x="1083" y="624" scale="0.4528731" layer="0" hasInfluenceArea="no" />
+      <object-ref idTarget="maletavacia" x="1675" y="385" scale="0.4239093" layer="1" hasInfluenceArea="no" />
+      <object-ref idTarget="okfermmin" x="130" y="1048" scale="0.09563289" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="noFermmin" x="550" y="1048" scale="0.3" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="info" x="325" y="1075" scale="0.1837933" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="infoGrande" x="948" y="1015" scale="1.339541" layer="8" hasInfluenceArea="no" />
     </objects>
+    <characters>
+      <character-ref idTarget="invisible" x="328" y="407" scale="3.329587" orientation="2" layer="2" hasInfluenceArea="no" />
+    </characters>
   </scene>
+  <scene id="paperspleaseMaria" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/Background.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="info" x="325" y="1075" scale="0.1839" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="infoGrande" x="948" y="1015" scale="1.3395" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="billetemaria" x="1331" y="1017" scale="1.182" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="docmaaria" x="1083" y="624" scale="0.4528" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="maletamaria" x="1675" y="387" scale="0.423" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="noFermmin" x="550" y="1048" scale="0.3" layer="3" hasInfluenceArea="no" />
+      <object-ref idTarget="okfermmin" x="130" y="1048" scale="0.096" layer="2" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="invisible" x="264" y="379" scale="2.616907" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="maria" x="273" y="821" scale="1.589591" layer="1" />
+    </atrezzo>
+  </scene>
+  <scene id="papersMarcos" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/Background.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="info" x="325" y="1075" scale="0.18379" layer="8" hasInfluenceArea="no" />
+      <object-ref idTarget="infoGrande" x="948" y="1015" scale="1.3395" layer="7" hasInfluenceArea="no" />
+      <object-ref idTarget="noFermmin" x="550" y="1048" scale="0.3" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="okfermmin" x="130" y="1048" scale="0.095" layer="5" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="invisible" x="299" y="454" scale="2.60274" orientation="2" layer="0" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="Marcos" x="303" y="819" scale="2.25" layer="4" />
+      <atrezzo-ref idTarget="docMarcos" x="1108" y="675" scale="0.5653163" layer="3" />
+      <atrezzo-ref idTarget="billeteMarcos" x="1331" y="1017" scale="1.192" layer="2" />
+      <atrezzo-ref idTarget="maletaVacia2" x="1675" y="387" scale="0.423" layer="1" />
+    </atrezzo>
+  </scene>
+  <scene id="papersLicinia" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/background/Background.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+    <objects>
+      <object-ref idTarget="info" x="325" y="1075" scale="0.18379" layer="6" hasInfluenceArea="no" />
+      <object-ref idTarget="infoGrande" x="948" y="1015" scale="1.3395" layer="5" hasInfluenceArea="no" />
+      <object-ref idTarget="noFermmin" x="550" y="1048" scale="0.3" layer="4" hasInfluenceArea="no" />
+      <object-ref idTarget="okfermmin" x="130" y="1048" scale="0.095" layer="3" hasInfluenceArea="no" />
+    </objects>
+    <characters>
+      <character-ref idTarget="invisible" x="264" y="379" scale="2.6" orientation="2" layer="1" hasInfluenceArea="no" />
+    </characters>
+    <atrezzo>
+      <atrezzo-ref idTarget="Licinia" x="313" y="822" scale="1.411893" layer="2" />
+      <atrezzo-ref idTarget="maletaVacia2" x="1675" y="387" scale="0.423" layer="0" />
+    </atrezzo>
+  </scene>
+  <scene id="papersNathan" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="papersJorge" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="papersGideon" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="papersAlizee" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="papersSophie" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="papersDenis" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <scene id="PapersLicinia2" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+    <documentation>
+    </documentation>
+    <resources name="No name">
+      <asset type="background" uri="assets/special/EmptyBackground.png" />
+    </resources>
+    <name>
+    </name>
+    <default-initial-position x="400" y="450" />
+  </scene>
+  <object id="info" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/requisitos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <effect>
+          <activate flag="infoGrande" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
+  <object id="infoGrande" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <condition>
+        <active flag="infoGrande" />
+      </condition>
+      <asset type="image" uri="assets/image/requisitos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+    <actions>
+      <examine needsGoTo="no" keepDistance="0" not-effects="no">
+        <condition>
+          <active flag="infoGrande" />
+        </condition>
+        <effect>
+          <deactivate flag="infoGrande" />
+          <condition />
+        </effect>
+      </examine>
+    </actions>
+  </object>
   <object id="Fermin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/Fermín .png" />
@@ -80,6 +307,14 @@
       <detailed>
       </detailed>
     </description>
+    <actions>
+      <use needsGoTo="yes" keepDistance="35" not-effects="no">
+        <effect>
+          <trigger-conversation idTarget="Fallo" />
+          <condition />
+        </effect>
+      </use>
+    </actions>
   </object>
   <object id="okfermmin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
@@ -131,7 +366,7 @@
       </detailed>
     </description>
   </object>
-  <object id="maletafermin" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="maletavacia" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
       <asset type="image" uri="assets/image/maletaVacia.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
@@ -145,9 +380,9 @@
       </detailed>
     </description>
   </object>
-  <object id="info" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="billetemaria" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
-      <asset type="image" uri="assets/image/requisitos.png" />
+      <asset type="image" uri="assets/image/b Maria.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -158,21 +393,10 @@
       <detailed>
       </detailed>
     </description>
-    <actions>
-      <examine needsGoTo="no" keepDistance="0" not-effects="no">
-        <effect>
-          <activate flag="infoGrande" />
-          <condition />
-        </effect>
-      </examine>
-    </actions>
   </object>
-  <object id="infoGrande" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+  <object id="docmaaria" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
     <resources name="No name">
-      <condition>
-        <active flag="infoGrande" />
-      </condition>
-      <asset type="image" uri="assets/image/requisitos.png" />
+      <asset type="image" uri="assets/image/d Maria.png" />
       <asset type="icon" uri="assets/special/EmptyIcon.png" />
     </resources>
     <description>
@@ -183,17 +407,20 @@
       <detailed>
       </detailed>
     </description>
-    <actions>
-      <examine needsGoTo="no" keepDistance="0" not-effects="no">
-        <condition>
-          <active flag="infoGrande" />
-        </condition>
-        <effect>
-          <deactivate flag="infoGrande" />
-          <condition />
-        </effect>
-      </examine>
-    </actions>
+  </object>
+  <object id="maletamaria" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/maletaTijeras.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
   </object>
   <graph-conversation id="Correcto">
     <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
@@ -201,18 +428,306 @@
         <resources name="No name" />
         <text>Todo correcto, puede continuar.</text>
       </speak-player>
-      <condition />
-      <end-conversation />
+      <condition>
+        <either>
+          <equals var="Escena" value="0" />
+          <equals var="Escena" value="2" />
+          <equals var="Escena" value="6" />
+          <equals var="Escena" value="8" />
+        </either>
+      </condition>
+      <speak-char idTarget="invisible">
+        <resources name="No name" />
+        <text>¿Está seguro?</text>
+      </speak-char>
+      <condition>
+        <either>
+          <equals var="Escena" value="1" />
+          <equals var="Escena" value="3" />
+          <equals var="Escena" value="4" />
+          <equals var="Escena" value="5" />
+          <equals var="Escena" value="7" />
+          <equals var="Escena" value="9" />
+        </either>
+      </condition>
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="siguiente" />
+          <condition>
+            <equals var="Escena" value="0" />
+          </condition>
+          <trigger-cutscene idTarget="siguiente3" />
+          <condition>
+            <equals var="Escena" value="2" />
+          </condition>
+        </effect>
+      </end-conversation>
     </dialogue-node>
   </graph-conversation>
-  <graph-conversation id="Tijeras">
-    <dialogue-node nodeindex="0" editor-x="50" editor-y="50">
+  <graph-conversation id="Fallo">
+    <option-node nodeindex="0" preListening="yes" editor-x="0" editor-y="2" x="0" y="2">
       <speak-player>
+        <text>Falta documentación</text>
         <resources name="No name" />
-        <text>Lo lamento, pero no puede entrar en el avión con unas tijeras de ese tamaño.</text>
       </speak-player>
       <condition />
+      <child nodeindex="1" />
+      <speak-player>
+        <text>Existen discrepancias entre los datos de su documentación</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="2" />
+      <speak-player>
+        <text>Hay un objeto peligroso en el equipaje de mano</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="3" />
+      <speak-player>
+        <text>Queda menos de una hora antes de que se inicie el vuelo</text>
+        <resources name="No name" />
+      </speak-player>
+      <condition />
+      <child nodeindex="4" />
+    </option-node>
+    <dialogue-node nodeindex="1" editor-x="695" editor-y="21">
+      <speak-char idTarget="invisible">
+        <resources name="No name" />
+        <text>La tengo en la maleta, espere un segundo...</text>
+      </speak-char>
+      <condition>
+        <equals var="Escena" value="3" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>Lo lamento, pero tendrá que ir al final de la cola.</text>
+      </speak-player>
+      <condition>
+        <equals var="Escena" value="3" />
+      </condition>
+      <speak-char idTarget="invisible">
+        <resources name="No name" />
+        <text>No, lo he traído todo.</text>
+      </speak-char>
+      <condition>
+        <not-equals var="Escena" value="3" />
+      </condition>
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="siguiente4" />
+          <condition>
+            <equals var="Escena" value="3" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="2" editor-x="52" editor-y="382">
+      <speak-char idTarget="invisible">
+        <resources name="No name" />
+        <text>Todos los datos bien.</text>
+      </speak-char>
+      <condition>
+        <either>
+          <not-equals var="Escena" value="5" />
+          <not-equals var="Escena" value="7" />
+        </either>
+      </condition>
+      <end-conversation />
+    </dialogue-node>
+    <dialogue-node nodeindex="3" editor-x="316" editor-y="341">
+      <speak-player>
+        <resources name="No name" />
+        <text>No pueden introducirse tijeras de ese tamaño en el equipaje de mano.</text>
+      </speak-player>
+      <condition>
+        <equals var="Escena" value="1" />
+      </condition>
+      <speak-player>
+        <resources name="No name" />
+        <text>No pueden introducirse botellas de más de 100 ml en el equipaje de mano.</text>
+      </speak-player>
+      <condition>
+        <equals var="Escena" value="4" />
+      </condition>
+      <speak-char idTarget="invisible">
+        <resources name="No name" />
+        <text>No llevo nada peligroso.</text>
+      </speak-char>
+      <condition>
+        <either>
+          <not-equals var="Escena" value="1" />
+          <not-equals var="Escena" value="4" />
+        </either>
+      </condition>
+      <end-conversation>
+        <effect>
+          <trigger-cutscene idTarget="siguiente2" />
+          <condition>
+            <equals var="Escena" value="1" />
+          </condition>
+        </effect>
+      </end-conversation>
+    </dialogue-node>
+    <dialogue-node nodeindex="4" editor-x="908" editor-y="374">
+      <speak-char idTarget="invisible">
+        <resources name="No name" />
+        <text>De eso nada, queda más tiempo.</text>
+      </speak-char>
+      <condition>
+        <not-equals var="Escena" value="11" />
+      </condition>
       <end-conversation />
     </dialogue-node>
   </graph-conversation>
+  <slidescene id="siguiente" start="no" idTarget="paperspleaseMaria" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <increment var="Escena" value="1" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/Siguiente.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="siguiente2" start="no" idTarget="papersMarcos" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <increment var="Escena" value="1" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/Siguiente.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="siguiente3" start="no" idTarget="papersLicinia" destinyX="-2147483648" destinyY="-2147483648" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <increment var="Escena" value="1" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/Siguiente.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <slidescene id="siguiente4" start="no" idTarget="papersNathan" destinyX="-2147483648" destinyY="2147483647" transitionTime="0" transitionType="0" next="new-scene" class="accesible" type="cutscene">
+    <documentation>
+    </documentation>
+    <effect>
+      <increment var="Escena" value="1" />
+      <condition />
+    </effect>
+    <resources name="No name">
+      <asset type="slides" uri="assets/animation/Siguiente.eaa.xml" />
+    </resources>
+    <name>
+    </name>
+  </slidescene>
+  <atrezzoobject id="maria">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/María Felisa.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="Marcos">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/marcos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="docMarcos">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/p marcos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="maletaVacia2">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/maletaVacia.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="billeteMarcos">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/b Marcos.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="Licinia">
+    <resources name="No name">
+      <asset type="image" uri="assets/image/5.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
+  <atrezzoobject id="Nathan">
+    <resources name="No name">
+      <asset type="image" uri="assets/special/EmptyImage.png" />
+      <asset type="icon" uri="assets/special/EmptyIcon.png" />
+    </resources>
+    <description>
+      <name>
+      </name>
+      <brief>
+      </brief>
+      <detailed>
+      </detailed>
+    </description>
+  </atrezzoobject>
 </eAdventure>

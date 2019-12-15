@@ -520,12 +520,14 @@
      <Compile Include="Assets\uAdventureUnity\Runner\UnitySceneRunner.cs" />
      <None Include="Assets\uAdventure\Resources\i18n\engine\it_IT.xml" />
      <None Include="Assets\uAdventure\Resources\i18n\engine\gl_ES.xml" />
+     <None Include="Assets\uAdventure\Resources\CurrentGame\assets\animation\sig1.eaa.xml" />
      <None Include="Assets\uAdventure\Resources\i18n\engine\en_EN.xml" />
      <None Include="Assets\uAdventure\Shaders\SimpleBlur.shader" />
      <None Include="Assets\uAdventure\Resources\i18n\engine\zh_CN.xml" />
      <None Include="Assets\uAdventure\Resources\Upgrader\chapter-v1-to-v2.xml" />
      <None Include="Assets\uAdventure\Resources\CurrentGame\chapter1.xml" />
      <None Include="Assets\uAdventure\Resources\CurrentGame\project.xml" />
+     <None Include="Assets\uAdventure\Resources\CurrentGame\assets\animation\Siguiente.eaa.xml" />
      <None Include="Assets\uAdventure\Shaders\AlphaMask.shader" />
      <None Include="Assets\uAdventure\Resources\i18n\engine\es_ES.xml" />
      <None Include="Assets\uAdventure\Plugins\unity-tracker\csharp-tracker\AssetManager\LICENSE.txt" />
