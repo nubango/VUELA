@@ -539,6 +539,7 @@
      <None Include="Assets\uAdventure\Resources\i18n\engine\pt_PT.xml" />
      <None Include="Assets\uAdventureGeo\MapzenGo\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\uAdventure\Resources\i18n\engine\ru_RU.xml" />
+     <None Include="Assets\uAdventure\Resources\CurrentGame\assets\animation\nadie.eaa.xml" />
      <None Include="Assets\uAdventure\Shaders\ShinyDefault.shader" />
      <None Include="Assets\uAdventure\Resources\config_editor.xml" />
      <None Include="Assets\uAdventure\Resources\Upgrader\chapter-v0-to-v1.xml" />
