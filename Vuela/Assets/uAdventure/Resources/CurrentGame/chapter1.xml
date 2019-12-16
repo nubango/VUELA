@@ -71,8 +71,8 @@
       </talk-to>
     </actions>
   </character>
-  <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="no" />
-  <scene id="PapersPleaseFermin" hideInventory="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="yes" />
+  <scene id="PapersPleaseFermin" hideInventory="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -366,7 +366,7 @@
     </name>
     <default-initial-position x="400" y="450" />
     <characters>
-      <character-ref idTarget="invisible" x="990" y="739" scale="9.270958" orientation="2" layer="0" hasInfluenceArea="no" />
+      <character-ref idTarget="invisible" x="994" y="751" scale="9.270958" orientation="2" layer="0" hasInfluenceArea="no" />
     </characters>
   </scene>
   <object id="infoGrande" returnsWhenDragged="yes" behaviour="normal" resources-transition-time="0">
