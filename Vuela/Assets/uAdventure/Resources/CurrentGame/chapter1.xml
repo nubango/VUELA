@@ -327,6 +327,7 @@
       <atrezzo-ref idTarget="bdenis" x="1331" y="1017" scale="1" layer="4" />
       <atrezzo-ref idTarget="docdenis" x="1083" y="624" scale="0.4528" layer="2" />
       <atrezzo-ref idTarget="maletaVacia2" x="1675" y="387" scale="0.423" layer="1" />
+      <atrezzo-ref idTarget="horatres" x="110" y="132" scale="0.352" layer="3" />
     </atrezzo>
   </scene>
   <scene id="PapersLicinia2" hideInventory="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
@@ -352,6 +353,7 @@
       <atrezzo-ref idTarget="doclicinia" x="1108" y="675" scale="0.565" layer="4" />
       <atrezzo-ref idTarget="Licinia" x="303" y="825" scale="1.470431" layer="3" />
       <atrezzo-ref idTarget="blicinia" x="1331" y="1017" scale="1.182" layer="2" />
+      <atrezzo-ref idTarget="horatres" x="110" y="132" scale="0.352" layer="1" />
     </atrezzo>
   </scene>
   <scene id="test1" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
