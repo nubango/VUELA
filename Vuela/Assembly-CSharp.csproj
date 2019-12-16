@@ -51,6 +51,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\ObjectToSuitcaseController.cs" />
+     <Compile Include="Assets\Scripts\Suitcase.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Bounce.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Auxiliar\AllElementsWithAssets.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Auxiliar\AssetInformation.cs" />
@@ -76,6 +79,7 @@
      <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Loader.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Parsers\AdventureHandler.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Parsers\AnimationHandler.cs" />
+     <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Parsers\ButtonClicked.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Parsers\ChapterHandler.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Parsers\FileHandler.cs" />
      <Compile Include="Assets\uAdventure\__Scripts\Core\Loader\Parsers\XmlHandler.cs" />

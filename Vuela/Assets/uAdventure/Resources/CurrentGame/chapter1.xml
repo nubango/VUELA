@@ -67,11 +67,16 @@
         <effect>
           <trigger-conversation idTarget="Test" />
           <condition />
+          <trigger-scene idTarget="Creditos" x="960" y="810" transitionTime="0" transitionType="0" />
+          <condition />
         </effect>
       </talk-to>
     </actions>
   </character>
   <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="yes" />
+  <unity-scene id="Menu_Options" scene="Assets/Scenes/Menu_Options.unity" start="no" />
+  <unity-scene id="Maleta" scene="Assets/Scenes/SuitcasePuzzle.unity" start="no" />
+  <unity-scene id="Creditos" scene="Assets/Scenes/Creditos.unity" start="no" />
   <scene id="PapersPleaseFermin" hideInventory="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
@@ -356,7 +361,7 @@
       <atrezzo-ref idTarget="horatres" x="110" y="132" scale="0.352" layer="1" />
     </atrezzo>
   </scene>
-  <scene id="test1" hideInventory="no" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="test1" hideInventory="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
@@ -1314,7 +1319,7 @@
       <condition />
       <child nodeindex="37" />
     </option-node>
-    <dialogue-node nodeindex="36" editor-x="478" editor-y="3100">
+    <dialogue-node nodeindex="36" editor-x="695" editor-y="3087">
       <speak-char idTarget="invisible">
         <resources name="No name" />
         <text>Correcto. La mayoría de las compañías habilitan el check-in a falta de 24 horas para el vuelo, algunas incluso antes, y lo recomendable es hacerlo con tiempo para no ir con prisas al aeropuerto.</text>
@@ -1327,7 +1332,7 @@
         </effect>
       </end-conversation>
     </dialogue-node>
-    <dialogue-node nodeindex="37" editor-x="695" editor-y="3218">
+    <dialogue-node nodeindex="37" editor-x="703" editor-y="3285">
       <speak-char idTarget="invisible">
         <resources name="No name" />
         <text>Incorrecto. La mayoría de las compañías no habilitan el check-in hasta las 24 horas anteriores al vuelo, y lo recomendable es hacerlo tan pronto como esté activo.</text>
