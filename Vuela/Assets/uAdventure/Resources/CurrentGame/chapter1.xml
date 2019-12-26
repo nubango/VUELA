@@ -73,7 +73,7 @@
       </talk-to>
     </actions>
   </character>
-  <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="yes" />
+  <unity-scene id="Menu" scene="Assets/Scenes/Menu.unity" start="no" />
   <unity-scene id="Menu_Options" scene="Assets/Scenes/Menu_Options.unity" start="no" />
   <unity-scene id="Maleta" scene="Assets/Scenes/SuitcasePuzzle.unity" start="no" />
   <unity-scene id="Creditos" scene="Assets/Scenes/Creditos.unity" start="no" />
@@ -361,11 +361,11 @@
       <atrezzo-ref idTarget="horatres" x="110" y="132" scale="0.352" layer="1" />
     </atrezzo>
   </scene>
-  <scene id="test1" hideInventory="yes" start="no" playerLayer="-1" playerScale="1" class="accesible" type="area">
+  <scene id="test1" hideInventory="yes" start="yes" playerLayer="-1" playerScale="1" class="accesible" type="area">
     <documentation>
     </documentation>
     <resources name="No name">
-      <asset type="background" uri="assets/background/Background.png" />
+      <asset type="background" uri="assets/background/fondo.png" />
     </resources>
     <name>
     </name>
